@@ -1,0 +1,31 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+    <PropertyGroup>
+        <TargetFramework>netstandard2.0</TargetFramework>
+        <IsPackable>true</IsPackable>
+        <PackageId>Engrslan.SME.DDD</PackageId>
+        <Version>1.0.0-beta3</Version>
+        <Authors>Muhammad Raslan</Authors>
+        <Description>Enterprise-ready .NET template implementing Domain-Driven Design with clean architecture. Features modular layers (Domain, Application, Infrastructure), OpenIddict authentication, Entity Framework Core, Angular 19 frontend, comprehensive testing support (planned), and production-ready patterns including
+            repositories, unit of work, domain events, and CQRS-ready structure (planned). Perfect for building scalable, maintainable applications following DDD principles.</Description>
+        <PackageType>Template</PackageType>
+        <NoBuild>true</NoBuild>
+        <IncludeBuildOutput>false</IncludeBuildOutput>
+        <IncludeContentInPack>true</IncludeContentInPack>
+        <ContentTargetFolders>content</ContentTargetFolders>
+        <PackageLicenseFile>content\LICENSE.md</PackageLicenseFile>
+        <RepositoryUrl>https://github.com/EngRslan/ddd-pattern-template</RepositoryUrl>
+        <PackageReadmeFile>content\README.md</PackageReadmeFile>
+        <PackageTags>DDD;Domain-Driven-Design;Clean-Architecture;CQRS;Repository-Pattern;Unit-of-Work;Entity-Framework-Core;EF-Core;OpenIddict;OAuth2;OIDC;Angular;Angular19;TypeScript;REST-API;Swagger;OpenAPI;Serilog;FluentValidation;Health-Checks;SQL-Server;Docker;Microservices-Ready;Enterprise;Template;Boilerplate;ASP.NET-Core;NET9;Domain-Events;Value-Objects;Aggregates;Multi-Layer;Modular;Production-Ready;Best-Practices</PackageTags>
+    </PropertyGroup>
+    
+    <ItemGroup>
+        <None Include="**/*" Exclude="**/bin/**;**/obj/**;*.user;*.suo;*.lock.json;*.nuget.props;*.nuget.targets;**/.claude/**;**/.idea/**;Engrslan.Template.nuspecproj.csproj;**/node_modules/**;**/nupkg/**;**/.git/**" Pack="true" PackagePath="content/" />
+    </ItemGroup>
+    
+    <ItemGroup>
+      <PackageReference Include="Serilog.AspNetCore" Version="10.0.0" />
+      <PackageReference Include="Serilog.Settings.Configuration" Version="10.0.0" />
+      <PackageReference Include="Serilog.Sinks.Console" Version="6.1.1" />
+      <PackageReference Include="Serilog.Sinks.File" Version="7.0.0" />
+    </ItemGroup>
+</Project>

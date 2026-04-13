@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2012/06/nuspec.xsd">
+  <metadata>
+    <id>DDD.Pattern.Template</id>
+    <version>1.0.0</version>
+    <title>DDD Pattern Template</title>
+    <authors>Your Name</authors>
+    <description>A .NET template for creating DDD (Domain-Driven Design) pattern applications with Clean Architecture, including ASP.NET Core Web API backend and optional Angular frontend.</description>
+    <packageTypes>
+      <packageType name="Template" />
+    </packageTypes>
+    <tags>dotnet-new;templates;ddd;clean-architecture;angular;webapi;aspnetcore</tags>
+    <projectUrl>https://github.com/yourusername/ddd-pattern-template</projectUrl>
+    <license type="expression">MIT</license>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>Initial release of DDD Pattern Template</releaseNotes>
+    <dependencies>
+      <group targetFramework=".NETStandard2.0">
+      </group>
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="**" target="content" exclude="**\bin\**;**\obj\**;**\.git\**;**\.vs\**;**\.vscode\**;**\*.user;*.nuspec;**\node_modules\**;**\dist\**;**\.angular\**" />
+  </files>
+</package>

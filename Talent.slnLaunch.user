@@ -1,0 +1,26 @@
+[
+  {
+    "Name": "New Profile",
+    "Projects": [
+      {
+        "Path": "src\\Presentation\\Identity\\Talent.Identity.csproj",
+        "Action": "Start",
+        "DebugTarget": "https"
+      },
+      {
+        "Path": "src\\Talent.API\\Talent.Api.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      },
+      {
+        "Path": "src\\Presentation\\Admin\\Talent.Admin.csproj",
+        "Action": "Start",
+        "DebugTarget": "IIS Express"
+      },
+      {
+        "Path": "src\\Presentation\\Candidate\\Talent.Candidate.csproj",
+        "Action": "Start"
+      }
+    ]
+  }
+]
